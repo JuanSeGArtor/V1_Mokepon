@@ -1,0 +1,48 @@
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0px 0px 0px 0px;
+}
+#ver-mapa h2{
+    font-size: 26px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+#mapa{
+    margin: 0px 0px 15px 0px;
+    border: 8px double #464e91;
+    border-radius: 10px;
+}
+#ver-mapa button{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#ver-mapa button img{
+    width: 80%;
+    background-color: #ffb5e6;
+    border-radius: 20px;
+}
+#ver-mapa button:hover{
+    zoom: 90%;
+}
+.botones-movimiento{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px black;
+}
+#botones-x{
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width: 480px) {
+    .botones-movimiento{
+        display: flex;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/combat.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    
+    <link rel="shortcut icon" href="icon/animal-paw-svgrepo-com.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+80s+Fade&family=Unbounded:wght@500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-content"></div>
+    <h1>MOKEPON</h1>
+    
+    <section id="seleccionar-mascota">
+        <h2>CHOOSE YOUR PET</h2>
+
+        <div id="contenedor-tarjetas" class="tarjetas-mokepones">
+            
+        </div>
+
+        <button id="boton-mascota-azar">
+            <img src="icon/rolling-dices-svgrepo-com.svg" alt="">
+        </button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2>World</h2>
+        <canvas id="mapa"></canvas>
+        <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveUp()"><img src="icon/up-arrow-svgrepo-com.svg" alt=""></button>
+        <div id="botones-x">
+            <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveLeft()"><img src="icon/left-arrow-back-svgrepo-com.svg" alt=""></button>
+            <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveRight()"><img src="icon/right-arrow-next-svgrepo-com.svg" alt=""></button>
+        </div>
+        <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveDown()"><img src="icon/down-arrow-svgrepo-com.svg" alt=""></button>
+    </section>
+
+    <section id="combate">
+        <h2>COMBAT</h2>
+        <div id="seccion-combate">
+            <div class="tarjeta-combate">
+                <div class="tarjeta-info" id="tarjeta-jugador">
+                    <p class="mascota-nombre"><span id="mascota-jugador"></span></p>
+                    <h3>Player</h3>
+                    <div id="mascota-jugador-img"></div>
+                    <span class="contador-victorias" id="victorias-mascota-jugador">0</span>
+                    <p class="mensajes" id="jugador-mensajes-ataque"></p>
+                </div>
+
+                <div class="tarjeta-info" id="tarjeta-rival">
+                    <p class="mascota-nombre"><span id="mascota-rival"></span></p>
+                    <h3>Rival</h3>
+                    <div id="mascota-rival-img"></div>
+                    <span class="contador-victorias" id="victorias-mascota-rival">0</span>
+                    <p class="mensajes" id="rival-mensajes-ataque"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="seleccionar-ataque"></div> 
+
+        <h2 id="mensaje-combate"></h2>
+    </section>
+
+    <section id="reiniciar">
+        <h2 id="mensaje-combate-final"></h2>
+
+        <div class="estrellas">
+            <span class="iconicfill-star" id="estrella-resultado-1"></span>
+            <span class="iconicfill-star" id="estrella-resultado-2"></span>
+            <span class="iconicfill-star" id="estrella-resultado-3"></span>
+            <span class="iconicfill-star" id="estrella-resultado-4"></span>
+            <span class="iconicfill-star" id="estrella-resultado-5"></span>
+        </div>
+
+        <button id="boton-reiniciar" type="reset">
+            <img id="icon-retry" src="icon/retry-svgrepo-com.svg" alt="">
+        </button>
+    </section>
+    <script src="js/mokepon.js"></script>
+</body>
+</html>

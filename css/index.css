@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+80s+Fade&family=Unbounded:wght@500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgb(216, 241, 250) 0%, lightblue 50%, rgb(216, 241, 250) 100%);
+}
+h1{
+    text-align: center;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-size: 60px;
+    width: 500px;
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 5px 0px;
+    color:  seashell;
+    background-color: #5b2397;
+    border-radius: 0px 0px 40px 40px;
+    cursor: default;
+}
+h2{
+    font-family: 'Unbounded', cursive;
+    font-size: 30px;
+    margin: 15px 0px 15px 0px;
+    color: seashell;
+    cursor: default;
+}
+p{
+    cursor: default;
+}
+button:hover{
+    cursor: pointer;
+}
+.mascota-nombre{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    color: #FCFFE7;
+    margin: 0px 0px 10px 0px;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 60px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+.tarjetas-mokepones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 300px;
+    gap: 50px;
+}
+.tarjeta-mokepon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 15px 5px;
+    background-color: #87699c;
+    border: 2px solid #302121;
+    border-radius: 10px;
+}
+.tarjeta-mokepon:hover{
+    zoom: 80%;
+    background-color: #2d609b;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 8px black);
+}
+.tarjeta-mokepon img{
+    width: 140px;
+    padding: 20px;
+    background-color: rgb(241, 194, 210);
+    border-radius: 3px;
+}
+#boton-mascota-azar{
+    font-family: 'Unbounded', cursive;
+    font-size: 18px;
+    background-color: #6a4691;
+    width: 80px;
+    height: 75px;
+    margin: 20px 0px 0px 0px;
+    color: #FCFFE7;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 40px;
+}
+#boton-mascota-azar:hover{
+    zoom: 95%;
+    border-color: #FCFFE7;
+    background-color: #2d609b;
+}
+#boton-mascota-azar img{
+    width: 70px;
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .tarjetas-mokepones{
+        flex-direction: column;
+    }
+}

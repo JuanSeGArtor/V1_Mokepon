@@ -1,0 +1,182 @@
+@import url(https://weloveiconfonts.com/api/?family=iconicfill);
+/* iconicfill */
+[class*="iconicfill-"]:before {
+    font-family: 'IconicFill', sans-serif;
+}
+
+#combate{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 0px 220px 0px 220px;
+    padding: 5px 30px 20px 30px;
+    border-radius: 60px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+#seccion-combate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.tarjeta-combate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 8px;
+    background-color: #2d609b;
+    border: 1px solid #30212a;
+    border-radius: 10px;
+    gap: 80px;
+}
+.tarjeta-info{
+    width: 150px;
+    padding: 5px 10px 0px 10px;
+    background-color: #C780FA;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px black;
+}
+h3{
+    margin: 0px 0px 10px 0px;
+    font-family: 'Unbounded', cursive;
+    font-size: 18px;
+    color: #302121;
+    cursor: default;
+}
+.contador-victorias{
+    margin: 10px 0px;
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    color: #FCFFE7;
+}
+.mensajes{
+    display: none;
+    font-family: 'Unbounded', cursive;
+    font-size: 12px;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: #302921;
+    border-radius: 5px;
+}
+#seleccionar-ataque{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+    gap: 20px;
+}
+#seleccionar-ataque button{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border-radius: 80px;
+}
+#seleccionar-ataque img{
+    width: 60px;
+}
+#seleccionar-ataque button:hover{
+    zoom: 80%;
+    background-color: rgb(208, 179, 245);
+    filter: drop-shadow(0px 0px 8px black);
+}
+#boton-fuego{
+    background-color: orange;
+    border-color: orangered;
+}
+#boton-agua{
+    background-color: skyblue;
+    border-color: rgb(49, 49, 158);
+}
+#boton-planta{
+    background-color: rgb(158, 247, 197);
+    border-color: green;
+}
+#mensaje-combate{
+    text-align: center;
+    color: rgb(245, 179, 179);
+}
+
+#main-content{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#reiniciar{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 500px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    margin-left: -275px;
+    margin-top: -150px;
+    padding: 20px;
+    background-color: none;
+    border: 6px solid steelblue;
+    border-radius: 60px;
+    filter: drop-shadow(0px 0px 8px black);
+    transition: 2s;
+}
+.estrellas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+    gap: 5px;
+}
+.iconicfill-star{
+    font-size: 70px;
+    color: lightgray;
+    filter: drop-shadow(2px 2px 1px black);
+}
+#reiniciar button{
+    padding: 10px 20px 10px 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#reiniciar button:hover{
+    background-color: cyan;
+    background-color: rgb(208, 179, 245);
+}
+#icon-retry{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 480px) {
+    #seccion-combate{
+        flex-direction: column;
+        gap: 2;
+    }
+    #seleccionar-ataque button{
+        width: 80px;
+        height: 80px;
+    }
+    #seleccionar-ataque img{
+        width: 50px;
+    }
+    #reiniciar{
+        width: 200px;
+        height: 250px;
+        left: 50%;
+        top: 50%;
+        margin-left: -125px;
+        margin-top: -150px;
+        padding: 20px;
+        border-radius: 60px;
+    }
+}
