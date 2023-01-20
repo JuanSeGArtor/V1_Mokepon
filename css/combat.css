@@ -158,6 +158,9 @@ h3{
 }
 
 @media (max-width: 480px) {
+    *{
+        user-select: none;
+    }
     #seccion-combate{
         flex-direction: column;
         gap: 2;
