@@ -107,6 +107,9 @@ button:hover{
 }
 
 @media (max-width: 480px) {
+    *{
+        user-select: none;
+    }
     h1{
         font-size: 50px;
     }
