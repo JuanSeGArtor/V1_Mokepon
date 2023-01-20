@@ -34,12 +34,12 @@
     <section id="ver-mapa">
         <h2>World</h2>
         <canvas id="mapa"></canvas>
-        <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveUp()"><img src="icon/up-arrow-svgrepo-com.svg" alt=""></button>
+        <button class="botones-movimiento" ontouchstart="moveUp()" ontouchend="stopMovement()" onmouseup="stopMovement()" onmousedown="moveUp()" touchstart="moveUp()"><img src="icon/up-arrow-svgrepo-com.svg" alt=""></button>
         <div id="botones-x">
-            <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveLeft()"><img src="icon/left-arrow-back-svgrepo-com.svg" alt=""></button>
-            <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveRight()"><img src="icon/right-arrow-next-svgrepo-com.svg" alt=""></button>
+            <button class="botones-movimiento" ontouchstart="moveLeft()" ontouchend="stopMovement()" onmouseup="stopMovement()" onmousedown="moveLeft()"><img src="icon/left-arrow-back-svgrepo-com.svg" alt=""></button>
+            <button class="botones-movimiento" ontouchstart="moveRight()" ontouchend="stopMovement()" onmouseup="stopMovement()" onmousedown="moveRight()"><img src="icon/right-arrow-next-svgrepo-com.svg" alt=""></button>
         </div>
-        <button class="botones-movimiento" onmouseup="stopMovement()" onmousedown="moveDown()"><img src="icon/down-arrow-svgrepo-com.svg" alt=""></button>
+        <button class="botones-movimiento" ontouchstart="moveDown()" ontouchend="stopMovement()" onmouseup="stopMovement()" onmousedown="moveDown()"><img src="icon/down-arrow-svgrepo-com.svg" alt=""></button>
     </section>
 
     <section id="combate">
