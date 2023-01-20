@@ -42,6 +42,9 @@ h1{
 }
 
 @media (max-width: 480px) {
+    *{
+        user-select: none;
+    }
     .botones-movimiento{
         display: flex;
     }
