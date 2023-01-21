@@ -11,7 +11,6 @@ h1{
     filter: drop-shadow(0px 0px 4px black);
 }
 #mapa{
-    margin: 0px 0px 15px 0px;
     border: 8px double #464e91;
     border-radius: 10px;
 }
@@ -47,5 +46,6 @@ h1{
     }
     .botones-movimiento{
         display: flex;
+        margin: 15px 0px 0px 0px;
     }
 }
