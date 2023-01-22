@@ -366,7 +366,7 @@ function combat() {
 function reviewCombatWins(totalRivalPetWins, totalPlayerPetWins) {
     if (totalRivalPetWins === totalPlayerPetWins) { 
         createFinalMessage("DRAW")
-        sectionReiniciar.style.borderColor = "brown"
+        sectionReiniciar.style.borderColor = "steelblue"
     } else if (totalPlayerPetWins > totalRivalPetWins) { 
         createFinalMessage("YOU WIN")
         sectionReiniciar.style.borderColor = "springgreen"
