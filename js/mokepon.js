@@ -28,7 +28,7 @@ let interval
 let bakcgroundMap = new Image()
 bakcgroundMap.src = "img/mokemap.png"
 let mapNewHeight
-let mapNewWidth = window.innerWidth - 60
+let mapNewWidth = window.innerWidth - 80
 let mokeponHeight = 60
 let mokeponWidth = 60
 
