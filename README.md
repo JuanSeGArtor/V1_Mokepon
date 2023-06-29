@@ -1,2 +1,2 @@
 # Mokepon
-Proyecto creado durante el desarrollo del nuevo curso de programación gratis de Platzi
+Proyecto creado durante el desarrollo del Nuevo Curso Gratis de Programación Básica de Platzi.
