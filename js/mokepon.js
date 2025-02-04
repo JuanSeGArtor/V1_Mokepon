@@ -364,15 +364,19 @@ function combat() {
 }
 
 function reviewCombatWins(totalRivalPetWins, totalPlayerPetWins) {
+    const estrellasDiv = document.querySelector(".estrellas");
     if (totalRivalPetWins === totalPlayerPetWins) { 
         createFinalMessage("DRAW")
         sectionReiniciar.style.borderColor = "steelblue"
+        estrellasDiv.style.display = "none"; 
     } else if (totalPlayerPetWins > totalRivalPetWins) { 
         createFinalMessage("YOU WIN")
         sectionReiniciar.style.borderColor = "springgreen"
+        estrellasDiv.style.display = "flex";
     } else {
         createFinalMessage("YOU LOSE")
         sectionReiniciar.style.borderColor = "crimson"
+        estrellasDiv.style.display = "flex";
     }
 }
 
